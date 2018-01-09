@@ -1,16 +1,24 @@
 public class SaloonCar extends Car{
+    private int numberOfSeats;
 
-    public SaloonCar(int getNumberOfSeats) {
-        super(getNumberOfSeats);
+    public SaloonCar(int numberOfSeats){
+        this.numberOfSeats = numberOfSeats;
     }
 
-    public SaloonCar(String manufacturer, int getNumberOfSeats) {
-        super(manufacturer, getNumberOfSeats);
+
+    public SaloonCar(String manufacturer, int numberOfSeats) {
+        super(manufacturer);
+        this.numberOfSeats = numberOfSeats;
     }
 
-    public SaloonCar(String color, String manufacturer, int getNumberOfSeats) {
-        super(color, manufacturer, getNumberOfSeats);
+    public SaloonCar(String color, String manufacturer, int numberOfSeats) {
+        super(color, manufacturer);
+        this.numberOfSeats = numberOfSeats;
     }
 
+    public int getNumberOfSeats() {
+        return numberOfSeats;
+    }
 
 }
+

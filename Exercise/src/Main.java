@@ -16,17 +16,17 @@ public class Main {
  */
     public static void main(String[] args) {
 
-//        Car car = new Car("Red", "Toyota");
-//        System.out.println("New Car is " + car.getColor() +" " + car.getManufacturer());
+        Car car = new Car("Red", "Toyota");
+        System.out.println("New Car is " + car.getColor() +" " + car.getManufacturer());
 
-        Car saloonCar1 = new SaloonCar(2);
-        System.out.println("SaloonCar1 has only " + saloonCar1.getGetNumberOfSeats() + "seats" );
+        SaloonCar saloonCar1 = new SaloonCar(2);
+        System.out.println("SaloonCar1 has " + saloonCar1.getNumberOfSeats()+  " seats" );
 
-        Car saloonCar2 = new SaloonCar("Nissan", 3);
-        System.out.println("SaloonCar2 has " + saloonCar2.getGetNumberOfSeats()+" seats and manufacturer is " + saloonCar2.getManufacturer());
+        SaloonCar saloonCar2 = new SaloonCar("Nissan", 3);
+        System.out.println("SaloonCar2 has " + saloonCar2.getNumberOfSeats() + " seats and manufacturer is " + saloonCar2.getManufacturer());
 
-        Car saloonCar3 = new SaloonCar("Purple","Ford", 4 );
-        System.out.println("SaloonCar3 has " + saloonCar3.getGetNumberOfSeats()+ " seats and manufacturer is " + saloonCar3.getManufacturer() + "and has " + saloonCar3.getColor()+ "color" );
+        SaloonCar saloonCar3 = new SaloonCar("Purple","Ford", 4 );
+        System.out.println("SaloonCar3 has "+ saloonCar3.getNumberOfSeats() + " seats and manufacturer is " + saloonCar3.getManufacturer() + " and " + saloonCar3.getColor()+ " color" );
 
 
 
